@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndpoint = "https://accounts.spotify.com/authorize?";
 const clientId = "11a434c5101b4b69a1dd9b77004641fd";
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://music-tau-ruby.vercel.app/";
 const scopes = ["user-library-read", "playlist-read-private"];
 
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
